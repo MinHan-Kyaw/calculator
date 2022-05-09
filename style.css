@@ -1,0 +1,214 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:visited {
+    color: white;
+}
+
+body, html {
+    background-image: radial-gradient( circle 506px at 50.6% 16.5%,  rgb(225, 245, 242) 5.5%, rgba(154,192,206,1) 100.2% );
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1em;
+    height: 5em;
+    color: rgb(255, 255, 255);
+}
+
+.center-display {
+    display: flex;
+    justify-content: center;
+}
+
+.display-main {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    text-align: right;
+    width: 25em;
+    height: 6em;
+    background-color:  rgba(248, 248, 248, 0.829);
+}
+
+.display-ctn {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: right;
+    padding: 0 1em 0.25em 0;
+}
+
+#display {
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+#display-top {
+    font-size: 1em;
+    color: rgb(146, 146, 146);
+    padding-bottom: 0.2em;
+    padding-right: 0.3em;
+}
+
+.calc-center {
+    display: flex;
+    justify-content: center;
+}
+
+#calc-ctn {
+    display: grid;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 25rem;
+    background-color: rgb(245, 253, 255);
+    color: black;
+    margin-bottom: 5em;
+}
+
+.nums {
+    text-align: center;
+    padding: 1.6rem;
+    font-size: 1.6em;
+    align-self: stretch;
+    border: 0.5px rgba(224, 224, 224, 0.616) solid;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+}
+
+.nums:hover {
+    cursor: pointer;
+    background-color: rgba(193, 201, 204, 0.253);
+    box-shadow: -1px 1px 8px 0px rgba(212, 212, 212, 0.48);
+    -webkit-box-shadow: -1px 1px 8px 0px rgba(190, 190, 190, 0.48);
+    -moz-box-shadow: -1px 1px 8px 0px rgba(175, 174, 174, 0.48);
+}
+
+.nums:active {
+    font-size: 1.5em;
+}
+
+.clear {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1.6em;
+    align-self: stretch;
+    border: 0.5px rgb(221, 221, 221) solid;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+}
+
+.clear {
+    border: 0.5px rgb(221, 221, 221) solid;
+    align-self: stretch;
+    background-color: rgba(162, 182, 189, 0.507);
+}
+
+.clear:hover {
+    cursor: pointer;
+    background-color: #d89c63;
+    color: white;
+    box-shadow: -1px 1px 8px 0px rgba(141,141,141,0.48);
+    -webkit-box-shadow: -1px 1px 8px 0px rgba(141,141,141,0.48);
+    -moz-box-shadow: -1px 1px 8px 0px rgba(141,141,141,0.48);
+}
+
+.clear:active {
+    font-size: 1.5em;
+}
+
+.operators {
+    text-align: center;
+    align-self: stretch;
+    padding: 1.5rem;
+    font-size: 1.8em;
+    background-color: rgb(142, 181, 196);
+    border: 0.5px rgba(224, 224, 224, 0.199) solid;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.operators:hover {
+    cursor: pointer;
+    background-color: rgb(125, 164, 180);
+    box-shadow: -1px 1px 8px 0px rgba(141,141,141,0.48);
+    -webkit-box-shadow: -1px 1px 8px 0px rgba(141,141,141,0.48);
+    -moz-box-shadow: -1px 1px 8px 0px rgba(141,141,141,0.48);
+}
+
+.operators:active {
+    font-size: 1.5em;
+}
+
+.operate-btn {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1.8em;
+    align-self: stretch;
+    background-color: rgba(162, 182, 189, 0.507);
+    border: 0.5px rgb(221, 221, 221) solid;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.operate-btn:hover {
+    cursor: pointer;
+    background-color: rgba(135, 151, 156, 0.507);
+    color: white;
+    box-shadow: -1px 1px 8px 0px rgba(141,141,141,0.48);
+    -webkit-box-shadow: -1px 1px 8px 0px rgba(141,141,141,0.48);
+    -moz-box-shadow: -1px 1px 8px 0px rgba(141,141,141,0.48);
+}
+
+.operate-btn:active {
+    font-size: 1.5em;
+}
+
+.link-ctn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    margin-top: 2.5em;
+}
+
+.link {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.link-img {
+    width: 1.8em;
+    height: auto;
+    margin-left: 0.5em;
+}
+
